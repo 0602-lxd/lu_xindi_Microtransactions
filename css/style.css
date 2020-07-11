@@ -1,0 +1,386 @@
+@charset "utf-8";
+/*css document*/
+
+
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color: black;
+}
+.container{
+	margin: 0 auto;
+	width: 960px;
+
+}
+
+h1
+{
+	margin: 0 auto;
+	font-family: "Times New Roman",Times,serif; 
+	font-size: 50px;
+	padding-top: 20px;
+	color: #595959;
+}
+
+h2
+{
+	font-family:"Times New Roman",Times,serif;  
+	font-size: 30px;
+	text-align: center;
+	color: #595959;
+}
+
+#title{ 
+	
+	text-align:center;
+}
+
+#mainNav {
+    height: 30px;
+    background-color: #afaeae;
+    display: flex;
+    margin: 0 auto;
+    margin-top: 25px;
+   
+  
+}
+
+#mainNav ul {
+    margin: 0 auto;
+    width: 960px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-family:"Times New Roman",Times,serif; 
+}
+
+#mainNav ul li {
+   display: inline-block;
+   text-decoration: none;
+    margin: 0 auto;
+}
+
+
+#mainNav ul li a {
+  font-size: 20px;
+  line-height: 30px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: all .5s ease-in-out;
+}
+
+#mainNav ul li a:hover {
+  border-radius: 5px;
+  color: #80a48c;
+  background-color: white;
+   
+}
+
+.listbox{
+  display: flex;
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
+
+.box{
+	width: 20%;
+	height: 300px; 
+}
+
+
+.selected{
+	color:#FF8E1D;
+}
+
+.selected .st0{
+	fill:#E62A3B;
+}
+
+.submitbutton{
+	display:block; 
+	margin: 0 auto;
+	margin-top: 30px;
+	background-color: pink;
+	border-color: white;
+	border-radius: 10px;
+}
+
+#selectMonster{
+	display: flex;
+	justify-content: center;
+  	color: white;
+  	margin: 10px;
+}
+
+
+footer{ 
+	clear:both; 
+	background-color:#afaeae; 
+	padding-top:20px; 
+	padding-bottom:20px; 
+	overflow:hidden; 
+	color:#fff;
+}
+
+.right{ 
+	text-align: right;
+ 	margin-right: 14px;
+}
+
+footer p{ 
+	margin:14px;
+}
+
+footer hr{ 
+	display:block; 
+	background-color:none;
+	border:none; 
+	height:1px; 
+	border-bottom:1px solid #fff;
+}
+
+.footlink{ 
+	padding:0px; 
+	margin:0px;
+	display:block;
+	margin-top:15px;
+	text-align:right; 
+	
+}
+.footlink img{ 
+	width:25px; 
+	height:25px;
+	margin:5px;
+}
+
+
+.box p{
+	text-align: center;
+	font-size: 15px;
+}
+
+#logo{
+	display:block; 
+	margin: 0 auto;
+	height: 150px;
+	width: 650px;
+}
+
+
+.iconDownload{
+	position: absolute;
+	display: flex;
+	width: 110px;
+	height: 30px;
+	padding-left: 15px;
+	padding-right: 30px;
+}
+
+
+.iconDownload:before{
+	content: '\f019';
+	font-family: fontAwesome;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient( to right, #ff00ff, #8a2be2);
+	border-radius: 30px;
+	text-align: center;
+	line-height: 30px;
+	color: #fff;
+	margin: 0 2px;
+	transition: 0.5s;
+	z-index: 1;
+
+}
+
+.iconDownload:hover:before{
+	width: 30px;
+
+}
+
+.iconDownload li{
+	position: absolute;
+	list-style: none;
+	transition: 1s;
+}
+
+.iconDownload li a{
+	display: block;
+	width: 30px;
+	height: 30px;
+	line-height: 30px;
+	text-align: center;
+	background-size: #262626;
+	color: #fff;
+	margin: 0 2px;
+	border-radius: 50%;
+	font-size: 15px;
+	transition: 1s;
+}
+
+.iconDownload li:nth-child(1) a{
+	background: #3b5999;
+}
+.iconDownload li:nth-child(2) a{
+	background: #55acee;
+}
+.iconDownload li:nth-child(3) a{
+	background: #0077b5;
+}
+.iconDownload li:nth-child(4) a{
+	background: #e4405f;
+}
+
+
+
+.iconDownload:hover li:nth-child(1) a{
+	transform: translateX(30px) rotate(360deg);
+	transition-delay: 0.6s;
+}
+.iconDownload:hover li:nth-child(2) a{
+	transform: translateX(60px) rotate(360deg);
+	transition-delay: 0.4s;
+}
+.iconDownload:hover li:nth-child(3) a{
+	transform: translateX(90px) rotate(360deg);
+	transition-delay: 0.2s;
+}
+.iconDownload:hover li:nth-child(4) a{
+	transform: translateX(120px) rotate(360deg);
+	transition-delay: 0s;
+}
+
+
+
+
+
+:root {
+  /* reds */
+  --main-red: rgba(255, 0, 28, 1);
+  --main-red-stroke: rgba(249, 205, 205, 1);
+}
+
+/* flex-grow: 1; flex-shrink: 1; flex-basis: 1 */
+/*svg { flex: 1; } */
+
+#wordmark1 {
+  stroke-width:2px;
+  stroke-dasharray: 10 2;
+  stroke-dashoffset: 10;
+  animation: dash 2s linear alternate infinite;
+}
+#wordmark2 {
+  stroke-width:2px;
+  stroke-dasharray: 10 2;
+  stroke-dashoffset: 10;
+  animation: dash 2s linear alternate infinite;
+}
+
+ @keyframes dash {
+  from {  
+    stroke-dashoffset: 50;
+  }
+
+  to {
+    stroke-dashoffset: 0;
+    
+  }
+} 
+
+
+#red, #orange, #yellow, #green, #cyan, #blue, #purple { 
+    animation: fadecircle 3s forwards;
+/*	animation: fadecircle 0.3s forwards; */
+    animation-iteration-count: infinite;
+	opacity: 100; 
+
+}
+
+#red { animation-delay: 2s; }
+#orange { animation-delay: 2.3s; }
+#yellow { animation-delay: 2.6s; }
+#green { animation-delay: 2.9s; }
+#cyan { animation-delay: 3.2s; }
+#blue { animation-delay: 3.6s; }
+#purple { animation-delay: 3.9s; }
+
+
+
+.ShakeAndBorder:hover {
+    -webkit-animation-name: shakeEffect;
+    -moz-animation-name: shakeEffect;
+    animation-name: shakeEffect;
+    -webkit-animation-duration: 0.8s;
+    -moz-animation-duration: 0.8s;
+    animation-duration: 0.8s;
+    -webkit-transform-origin: 50% 50%;
+    -moz-transform-origin: 50% 50%;
+    transform-origin: 50% 50%;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    -webkit-animation-timing-function: linear;
+    -moz-animation-timing-function: linear;
+    animation-timing-function: linear;
+}
+
+
+@keyframes shakeEffect{
+	0% {
+		transform: translate(2px, 1px) rotate(0deg);
+	}
+	10% {
+		transform: translate(-1px, -2px) rotate(-1deg);
+	}
+	20% {
+		transform: translate(-3px, 0px) rotate(1deg);
+	}
+	30% {
+		transform: translate(0px, 2px) rotate(0deg);
+	}
+	40% {
+		transform: translate(1px, -1px) rotate(1deg);
+	}
+	50% {
+		transform: translate(-1px, 1px) rotate(-1deg);
+	}
+	60% {
+		transform: translate(-3px, -2px) rotate(0deg);
+	}
+	70% {
+		transform: translate(2px, 1px) rotate(-1deg);
+	}
+	80% {
+		transform: translate(-1px, -2px) rotate(1deg);
+	}
+	90% {
+		transform: translate(2px, -1px) rotate(0deg);
+	}
+	100% {
+		transform: translate(1px, -2px) rotate(-1deg);
+	}
+
+}
+
+@keyframes fadecircle {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+
+
+
+
+
+
+
